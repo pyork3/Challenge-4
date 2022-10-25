@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(181, 181, 181);
+    background-color: rgb(81, 81, 81);
     overflow: hidden;
 }
 
@@ -45,7 +45,7 @@ li {
 }
 
 .inner-box {
-    background-color: rgb(235, 216, 195);
+    background-color: rgb(206, 206, 206);
     height: 100%;
     width: 50%;
     margin: 0 auto;
