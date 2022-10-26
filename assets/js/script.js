@@ -1,7 +1,7 @@
-let questions = [
+var questions = [
     {
-        numb: 1,
-        question: "Which of the following is a loop structure in JavaScript?"
+        number: 1,
+        question: "Which of the following is a loop structure in JavaScript?",
         answer: "For Loop",
         options: [
             "For Loop",
@@ -11,7 +11,7 @@ let questions = [
         ]
     },
     {
-        numb: 2,
+        number: 2,
         question: "Which is NOT a type of pop up box in Javascript?",
         answer: "Greeting",
         options:[
@@ -22,7 +22,7 @@ let questions = [
         ]
     },
     {
-        numb: 3,
+        number: 3,
         question: "Javascript was developed by which company?",
         answer: "Netscape",
         options:[ 
@@ -33,7 +33,7 @@ let questions = [
         ]
     },
     {
-        numb: 4,
+        number: 4,
         question: "JavaScript is a case sensitice language.",
         answer: "True",
         options: [
@@ -42,5 +42,45 @@ let questions = [
         ]
     },
 ];
+
+var timerElement = document.querySelector(".timer-display");
+var timer;
+var timerCount;
+var startButton = document.querySelector(".start-button");
+
+startButton.addEventListener("click", startGame);
+
+function startGame() {
+    startButton.classList.add('hide')
+    timerCount = 100;
+    startButton.disabled = true;
+    renderBlanks()
+    startTimer()
+
+  }
+
+function startTimer() {
+    timer = setInterval(function() {
+      timerCount--;
+      timerElement.textContent = timerCount;
+      if (timerCount >= 0) {
+        // Tests if win condition is met
+        if (isWin && timerCount > 0) {
+          // Clears interval and stops timer
+          clearInterval(timer);
+          winGame();
+        }
+      }
+      // Tests if time has run out
+      if (timerCount === 0) {
+        // Clears interval
+        clearInterval(timer);
+        loseGame();
+      }
+    }, 1000);
+  }
+
+
+
 
 

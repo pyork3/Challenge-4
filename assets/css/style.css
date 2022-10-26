@@ -36,11 +36,8 @@ li {
     justify-content: start;
 }
 
-.navbar {
 
-}
-
-.navbar p {
+.timer-display p {
     float: right;
 }
 
@@ -48,16 +45,15 @@ li {
     background-color: rgb(206, 206, 206);
     height: 100%;
     width: 50%;
-    margin: 0 auto;
+    margin: 20vh auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .inner-box main {
-    margin-top: 5vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
     
 }
@@ -69,14 +65,17 @@ li {
 }
 
 .questions-page {
+    display: none;
 
 }
 
 .finish-screen {
+    display: none;
 
 }
 
 .highscores-page {
+    display: none;
 
 }
 
