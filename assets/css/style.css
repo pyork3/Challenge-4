@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(81, 81, 81);
+    background-color: rgb(219, 219, 219);
     overflow: hidden;
 }
 
@@ -44,28 +44,48 @@ li {
 .inner-box {
     background-color: rgb(206, 206, 206);
     height: 100%;
-    width: 50%;
+    width: 40%;
     margin: 20vh auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
 }
 
 .inner-box main {
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
-    
 }
 
 .inner-box button {
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    outline: none;
+    background-color: cadetblue;
+
 
 }
 
-.questions-page {
+.start-screen {
     display: none;
+}
+
+.questions-page {
+    /* display: none; */
+    
+
+}
+
+.questions-page ul {
+    margin-top: 2vh;
+    display: grid; 
+    gap: 10px;
+    float: left;
 
 }
 
