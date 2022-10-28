@@ -9,18 +9,20 @@
 </head>
 <body>
     <div class="outer-box">
-        <div class="Highscores-btn">
+        <div class="highscores-btn">
             <button>View Highscores</button>
         </div>    
         <div class="timer-display">
-            <p>Time: 00:00:00</p>
+            <h2>Time: 00:00:00</h2>
         </div>
 
         <div class="inner-box">
         <main>
             <section class="start-screen">
                 <h1>Test Your Knowledge</h1>
+                <br>
                 <p>Click the start button to begin</p>
+                <br>
                 <button class="start-button">Start Quiz</button>
             </section>
             <section class="questions-page">
@@ -35,22 +37,27 @@
 
             <section class="finish-screen">
                 <h2>Quiz Completed!</h2>
-                <p>Your Score: </p>
+                <br>
+                <div class="your-score">Your Score:</div>
                 <div>
                     <label for="">Enter initials:</label>
                     <input type="text">
-                    <button>Submit</button>
                 </div>
+                <br>
+                <button>Submit</button>
             </section>
             <section class="highscores-page">
                 <h2>Highscores:</h2>
+                <br>
                 <ol>
                     <li>PY - 20</li>
                     <li>PY - 24</li>
                     <li>PY - 23</li>
                 </ol>
-                <button>Go Back</button>
-                <button>Clear Highscores</button>
+                <br>
+                <button class="play-againbtn">Play Again</button>
+                <br>
+                <button class="clear-highscores">Clear Highscores</button>
             </section>
 
         </main>
