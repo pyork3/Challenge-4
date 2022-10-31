@@ -46,17 +46,21 @@ var questions = [
 var timerElement = document.querySelector(".timer-display");
 var timer;
 var timerCount;
-var startButton = document.querySelector(".start-button");
+var startButton = document.getElementById('start-button');
+var startScreen = document.getElementById('start-screen');
+var questionSection = document.getElementById('questions-page');
 
-startButton.addEventListener("click", startGame);
+
+startButton.addEventListener('click', startGame);
 
 function startGame() {
-    startButton.classList.add('hide')
+    startScreen.classList.add('hide')
     timerCount = 100;
     startButton.disabled = true;
-    renderBlanks()
+    //renderBlanks()
     startTimer()
-
+    questionSection.classList.remove('hide')
+    //nextQuestion()
   }
 
 function startTimer() {
@@ -79,6 +83,7 @@ function startTimer() {
       }
     }, 1000);
   }
+
 
 
 
