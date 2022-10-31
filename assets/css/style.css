@@ -65,21 +65,15 @@ li {
     border: 1px solid black;
     outline: none;
     background-color: rgb(10, 79, 255);
-
-
 }
 
-.start-screen {
-   /* display: none; */
-}
 
-.questions-page {
-     display: none; 
+#questions-page {
+    display: none; 
     
-
 }
 
-.questions-page ul {
+#questions-page ul {
     margin-top: 5vh;
     display: grid; 
     gap: 15px;
@@ -87,18 +81,12 @@ li {
 
 }
 
-.finish-screen {
-    display: none; 
 
-}
-
-.highscores-page {
-   display: none; 
-
-}
-
-.highscores-page ol {
+#highscores-page ol {
     overflow-y: scroll;
     max-height: 100px;
 }
 
+.hide {
+    display: none ;
+}
